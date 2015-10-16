@@ -29,6 +29,7 @@
 @property (nullable, nonatomic, strong) NSArray <APAddress *> *addresses;
 @property (nullable, nonatomic, strong) NSArray <APSocialProfile *> *socialProfiles;
 @property (nullable, nonatomic, strong) NSDate *birthday;
+@property (nonatomic) BOOL hasImage;
 @property (nullable, nonatomic, strong) NSString *note;
 @property (nullable, nonatomic, strong) NSArray <NSString *> *websites;
 @property (nullable, nonatomic, strong) NSArray <APRelatedPerson *> *relatedPersons;

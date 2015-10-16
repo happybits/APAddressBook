@@ -45,6 +45,10 @@
     {
         contact.thumbnail = [APImageExtractor thumbnailWithRecordRef:recordRef];
     }
+    if (fieldMask & APContactFieldHasImage)
+    {
+        contact.hasImage = [self.extractor hasImageProperty];
+    }
     if (fieldMask & APContactFieldPhonesOnly || fieldMask & APContactFieldPhonesWithLabels)
     {
         contact.phones = [self.extractor phonesWithLabels:(fieldMask & APContactFieldPhonesWithLabels)];

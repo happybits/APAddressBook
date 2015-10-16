@@ -31,6 +31,7 @@ typedef NS_OPTIONS(NSUInteger, APContactField)
     APContactFieldLinkedRecordIDs  = 1 << 13,
     APContactFieldSource           = 1 << 14,
     APContactFieldRecordDate       = 1 << 15,
+    APContactFieldHasImage         = 1 << 16,
     APContactFieldDefault          = APContactFieldName | APContactFieldPhonesOnly,
     APContactFieldAll              = 0xFFFFFFFF
 };

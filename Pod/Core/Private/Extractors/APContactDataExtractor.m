@@ -60,6 +60,11 @@
     }];
 }
 
+- (BOOL)hasImageProperty
+{
+    return ABPersonHasImageData(self.recordRef);
+}
+
 - (NSArray *)emailsWithLabels:(BOOL)needLabels
 {
     return [self mapMultiValueOfProperty:kABPersonEmailProperty

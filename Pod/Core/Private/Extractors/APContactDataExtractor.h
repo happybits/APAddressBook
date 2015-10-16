@@ -27,6 +27,7 @@
 - (NSArray *)socialProfiles;
 - (NSArray *)relatedPersons;
 - (NSArray *)linkedRecordIDs;
+- (BOOL)hasImageProperty;
 - (APSource *)source;
 - (APRecordDate *)recordDate;
 - (NSString *)stringProperty:(ABPropertyID)property;
