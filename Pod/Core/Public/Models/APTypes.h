@@ -48,5 +48,7 @@ typedef NS_ENUM(NSUInteger, APSocialNetworkType)
     APSocialNetworkTwitter = 2,
     APSocialNetworkLinkedIn = 3,
     APSocialNetworkFlickr = 4,
-    APSocialNetworkGameCenter = 5
+    APSocialNetworkGameCenter = 5,
+    APSocialNetworkMySpace = 6,
+    APSocialNetworkSinaWeibo = 7,
 };

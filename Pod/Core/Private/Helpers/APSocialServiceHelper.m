@@ -33,6 +33,18 @@
     {
         return APSocialNetworkGameCenter;
     }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonSocialProfileServiceGameCenter])
+    {
+        return APSocialNetworkGameCenter;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonSocialProfileServiceMyspace])
+    {
+        return APSocialNetworkMySpace;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonSocialProfileServiceSinaWeibo])
+    {
+        return APSocialNetworkSinaWeibo;
+    }
     else
     {
         return APSocialNetworkUnknown;
