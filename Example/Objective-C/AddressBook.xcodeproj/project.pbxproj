@@ -30,6 +30,7 @@
 		2DBA1DD363A02B334F88A6A6 /* APPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1AB470DEA08ACCE65F4A /* APPhone.m */; };
 		2DBA1F046B5BC47D436EE5F5 /* APName.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1FA13BE5F98D4A810187 /* APName.m */; };
 		2DBA1F30EEC9391D5B7D837B /* APAddressBookRefWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1CE66C6D93542A66D6CC /* APAddressBookRefWrapper.m */; };
+		5D68EA081CB314100031C41A /* APInstantMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D68EA071CB314100031C41A /* APInstantMessenger.m */; };
 		A495CDF35F214F43AFF3AAF9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6084C3D31A504C79BEA08B84 /* libPods.a */; };
 		FA66281C187FE9EF00667C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66281B187FE9EF00667C81 /* Foundation.framework */; };
 		FA66281E187FE9EF00667C81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66281D187FE9EF00667C81 /* CoreGraphics.framework */; };
@@ -95,6 +96,8 @@
 		2DBA1F4B68223450E5314F03 /* APRecordDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRecordDate.h; sourceTree = "<group>"; };
 		2DBA1F7630DA6BBFED5D6526 /* APSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APSource.m; sourceTree = "<group>"; };
 		2DBA1FA13BE5F98D4A810187 /* APName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APName.m; sourceTree = "<group>"; };
+		5D68EA061CB314100031C41A /* APInstantMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInstantMessenger.h; sourceTree = "<group>"; };
+		5D68EA071CB314100031C41A /* APInstantMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APInstantMessenger.m; sourceTree = "<group>"; };
 		6084C3D31A504C79BEA08B84 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6496F61BD33753BB99E0AB3D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB33874E6CEAEB5C3CAD23B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +244,8 @@
 				2DBA1AB470DEA08ACCE65F4A /* APPhone.m */,
 				2DBA1C455F191115437B4108 /* APSocialProfile.h */,
 				2DBA1825CB9083C503993480 /* APSocialProfile.m */,
+				5D68EA061CB314100031C41A /* APInstantMessenger.h */,
+				5D68EA071CB314100031C41A /* APInstantMessenger.m */,
 				2DBA161642CBB5F0613EABC7 /* APTypes.h */,
 				2DBA1F7630DA6BBFED5D6526 /* APSource.m */,
 				2DBA19EA7D800550FD7BB39A /* APSource.h */,
@@ -509,6 +514,7 @@
 				FA662854187FEC7F00667C81 /* ListViewController.m in Sources */,
 				2DBA1CB4F69E60CE1F9C0242 /* APAddressBook.m in Sources */,
 				2DBA11BA759966D1EB552C67 /* APAddress.m in Sources */,
+				5D68EA081CB314100031C41A /* APInstantMessenger.m in Sources */,
 				2DBA11BEDC2FD17137A8C852 /* APContact.m in Sources */,
 				2DBA1DD363A02B334F88A6A6 /* APPhone.m in Sources */,
 				2DBA1D30942122FA3D996574 /* APSocialProfile.m in Sources */,

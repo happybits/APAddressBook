@@ -65,6 +65,10 @@
     {
         contact.socialProfiles = [self.extractor socialProfiles];
     }
+    if (fieldMask & APContactFieldInstantMessengers)
+    {
+        contact.instantMessengers = [self.extractor instantMessengers];
+    }
     if (fieldMask & APContactFieldBirthday)
     {
         contact.birthday = [self.extractor dateProperty:kABPersonBirthdayProperty];

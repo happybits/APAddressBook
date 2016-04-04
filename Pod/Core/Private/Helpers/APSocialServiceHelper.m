@@ -51,4 +51,52 @@
     }
 }
 
++ (APMessengerType)instantMessengerTypeWithString:(NSString *)string
+{
+    if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceYahoo])
+    {
+        return APMessengerTypeYahoo;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceJabber])
+    {
+        return APMessengerTypeJabber;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceMSN])
+    {
+        return APMessengerTypeMSN;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceICQ])
+    {
+        return APMessengerTypeICQ;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceAIM])
+    {
+        return APMessengerTypeAIM;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceQQ])
+    {
+        return APMessengerTypeQQ;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceGoogleTalk])
+    {
+        return APMessengerTypeGoogleTalk;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceSkype])
+    {
+        return APMessengerTypeSkype;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceFacebook])
+    {
+        return APMessengerTypeFacebook;
+    }
+    else if ([string isEqualToString:(__bridge NSString *)kABPersonInstantMessageServiceGaduGadu])
+    {
+        return APMessengerTypeGaduGadu;
+    }
+    else
+    {
+        return APMessengerTypeUnknown;
+    }
+}
+
 @end

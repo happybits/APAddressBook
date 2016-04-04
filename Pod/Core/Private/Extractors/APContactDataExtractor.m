@@ -18,6 +18,7 @@
 #import "APRelatedPerson.h"
 #import "APRecordDate.h"
 #import "APContactDate.h"
+#import "APInstantMessenger.h"
 
 @implementation APContactDataExtractor
 
@@ -130,6 +131,21 @@
         [profiles addObject:profile];
     }
     return profiles.copy;
+}
+
+- (NSArray *)instantMessengers
+{
+    NSMutableArray *messengers = [[NSMutableArray alloc] init];
+    NSArray *array = [self arrayProperty:kABPersonInstantMessageProperty];
+    for (NSDictionary *dictionary in array)
+    {
+        APInstantMessenger *messenger = [[APInstantMessenger alloc] init];
+        NSString *address = dictionary[(__bridge NSString *)kABPersonInstantMessageServiceKey];
+        messenger.messenger = [APSocialServiceHelper instantMessengerTypeWithString:address];
+        messenger.username = dictionary[(__bridge NSString *)kABPersonInstantMessageUsernameKey];
+        [messengers addObject:messenger];
+    }
+    return messengers.copy;
 }
 
 - (NSArray *)relatedPersons

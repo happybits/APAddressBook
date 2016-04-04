@@ -18,6 +18,7 @@
 #import "APSource.h"
 #import "APRecordDate.h"
 #import "APContactDate.h"
+#import "APInstantMessenger.h"
 
 @interface APContact : NSObject
 
@@ -29,6 +30,7 @@
 @property (nullable, nonatomic, strong) NSArray <APEmail *> *emails;
 @property (nullable, nonatomic, strong) NSArray <APAddress *> *addresses;
 @property (nullable, nonatomic, strong) NSArray <APSocialProfile *> *socialProfiles;
+@property (nullable, nonatomic, strong) NSArray <APInstantMessenger *> *instantMessengers;
 @property (nullable, nonatomic, strong) NSDate *birthday;
 @property (nonatomic) BOOL hasImage;
 @property (nullable, nonatomic, strong) NSString *note;

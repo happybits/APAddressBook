@@ -37,6 +37,7 @@ typedef NS_OPTIONS(NSUInteger, APContactField)
     APContactFieldDates                 = 1 << 16,
     APContactFieldRecordDate            = 1 << 17,
     APContactFieldHasImage              = 1 << 18,
+    APContactFieldInstantMessengers     = 1 << 19,
     APContactFieldDefault               = APContactFieldName | APContactFieldPhonesOnly,
     APContactFieldAll                   = 0xFFFFFFFF
 };
@@ -51,4 +52,19 @@ typedef NS_ENUM(NSUInteger, APSocialNetworkType)
     APSocialNetworkGameCenter = 5,
     APSocialNetworkMySpace = 6,
     APSocialNetworkSinaWeibo = 7,
+};
+
+typedef NS_ENUM(NSUInteger, APMessengerType)
+{
+    APMessengerTypeUnknown = 0,
+    APMessengerTypeYahoo = 1,
+    APMessengerTypeJabber = 2,
+    APMessengerTypeMSN = 3,
+    APMessengerTypeICQ = 4,
+    APMessengerTypeAIM = 5,
+    APMessengerTypeQQ = 6,
+    APMessengerTypeGoogleTalk = 7,
+    APMessengerTypeSkype = 8,
+    APMessengerTypeFacebook = 9,
+    APMessengerTypeGaduGadu = 10,
 };

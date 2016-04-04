@@ -12,5 +12,6 @@
 @interface APSocialServiceHelper : NSObject
 
 + (APSocialNetworkType)socialNetworkTypeWithString:(NSString *)string;
++ (APMessengerType)instantMessengerTypeWithString:(NSString *)string;
 
 @end

@@ -25,6 +25,7 @@
 - (NSArray *)emailsWithLabels:(BOOL)needLabels;
 - (NSArray *)addressesWithLabels:(BOOL)labels;
 - (NSArray *)socialProfiles;
+- (NSArray *)instantMessengers;
 - (NSArray *)relatedPersons;
 - (NSArray *)linkedRecordIDs;
 - (BOOL)hasImageProperty;
