@@ -27,9 +27,16 @@
 {
     APName *name = [[APName alloc] init];
     name.firstName = [self stringProperty:kABPersonFirstNameProperty];
+    name.firstNamePhonetic = [self stringProperty:kABPersonFirstNamePhoneticProperty];
     name.lastName = [self stringProperty:kABPersonLastNameProperty];
+    name.lastNamePhonetic = [self stringProperty:kABPersonLastNamePhoneticProperty];
     name.middleName = [self stringProperty:kABPersonMiddleNameProperty];
+    name.middleNamePhonetic = [self stringProperty:kABPersonMiddleNamePhoneticProperty];
     name.compositeName = [self compositeName];
+    name.prefix = [self stringProperty:kABPersonPrefixProperty];
+    name.suffix = [self stringProperty:kABPersonSuffixProperty];
+    name.nickname = [self stringProperty:kABPersonNicknameProperty];
+    
     return name;
 }
 
