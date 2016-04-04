@@ -17,6 +17,7 @@
 #import "APRelatedPerson.h"
 #import "APSource.h"
 #import "APRecordDate.h"
+#import "APContactDate.h"
 
 @interface APContact : NSObject
 
@@ -35,6 +36,7 @@
 @property (nullable, nonatomic, strong) NSArray <APRelatedPerson *> *relatedPersons;
 @property (nullable, nonatomic, strong) NSArray <NSNumber *> *linkedRecordIDs;
 @property (nullable, nonatomic, strong) APSource *source;
+@property (nullable, nonatomic, strong) NSArray <APContactDate *> *dates;
 @property (nullable, nonatomic, strong) APRecordDate *recordDate;
 
 @end
