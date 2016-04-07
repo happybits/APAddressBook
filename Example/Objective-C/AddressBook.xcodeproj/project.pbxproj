@@ -31,7 +31,6 @@
 		2DBA1F046B5BC47D436EE5F5 /* APName.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1FA13BE5F98D4A810187 /* APName.m */; };
 		2DBA1F30EEC9391D5B7D837B /* APAddressBookRefWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1CE66C6D93542A66D6CC /* APAddressBookRefWrapper.m */; };
 		5D68EA081CB314100031C41A /* APInstantMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D68EA071CB314100031C41A /* APInstantMessenger.m */; };
-		5D9B31311CB6324300196226 /* AddressBookUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9B31301CB6324300196226 /* AddressBookUtilities.swift */; };
 		A495CDF35F214F43AFF3AAF9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6084C3D31A504C79BEA08B84 /* libPods.a */; };
 		FA66281C187FE9EF00667C81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66281B187FE9EF00667C81 /* Foundation.framework */; };
 		FA66281E187FE9EF00667C81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA66281D187FE9EF00667C81 /* CoreGraphics.framework */; };
@@ -99,8 +98,6 @@
 		2DBA1FA13BE5F98D4A810187 /* APName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APName.m; sourceTree = "<group>"; };
 		5D68EA061CB314100031C41A /* APInstantMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APInstantMessenger.h; sourceTree = "<group>"; };
 		5D68EA071CB314100031C41A /* APInstantMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APInstantMessenger.m; sourceTree = "<group>"; };
-		5D9B312F1CB6324300196226 /* AddressBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddressBook-Bridging-Header.h"; sourceTree = "<group>"; };
-		5D9B31301CB6324300196226 /* AddressBookUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressBookUtilities.swift; sourceTree = "<group>"; };
 		6084C3D31A504C79BEA08B84 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6496F61BD33753BB99E0AB3D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8DB33874E6CEAEB5C3CAD23B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,7 +236,6 @@
 		2DBA1D06B4967106F9C2BFBC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5D9B31301CB6324300196226 /* AddressBookUtilities.swift */,
 				2DBA10804A06D410681819BD /* APAddress.m */,
 				2DBA16AB38312AA9DDBD1F1F /* APAddress.h */,
 				2DBA19846B6F2A33EDA67564 /* APContact.h */,
@@ -265,7 +261,6 @@
 				2DBA1F4B68223450E5314F03 /* APRecordDate.h */,
 				2DBA1D597A4DD560AEAD0FEA /* APContactDate.h */,
 				2DBA12402A8EE654AD2FD70A /* APContactDate.m */,
-				5D9B312F1CB6324300196226 /* AddressBook-Bridging-Header.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,7 +436,6 @@
 		FA662810187FE9EF00667C81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = alterplay;
 			};
@@ -535,7 +529,6 @@
 				2DBA12ED1646227C60CFEB8A /* APSocialServiceHelper.m in Sources */,
 				2DBA161F7922FC8733E39BDF /* APSource.m in Sources */,
 				2DBA14C2B75EDDF1BE7BCE4B /* APRelatedPerson.m in Sources */,
-				5D9B31311CB6324300196226 /* AddressBookUtilities.swift in Sources */,
 				2DBA1592543ABA1E3A6B98EA /* APEmail.m in Sources */,
 				2DBA1D9A4E96FD193BB09770 /* APImageExtractor.m in Sources */,
 				2DBA1F046B5BC47D436EE5F5 /* APName.m in Sources */,
@@ -637,16 +630,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AddressBook/AddressBook-Prefix.pch";
 				INFOPLIST_FILE = "AddressBook/AddressBook-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alterplay.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../../Pod/Core/Public/Models/AddressBook-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -657,15 +646,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AddressBook/AddressBook-Prefix.pch";
 				INFOPLIST_FILE = "AddressBook/AddressBook-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alterplay.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "../../Pod/Core/Public/Models/AddressBook-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
